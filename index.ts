@@ -3,7 +3,7 @@
 // `state` is an object that persists across program updates. Store data here.
 import { nodes, root, state } from "membrane";
 
-export async function endpoint({ args: { path, body } }) {
+export async function endpoint({ path, body }) {
   switch (path) {
     case "/webhook":
       {
